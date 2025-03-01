@@ -70,7 +70,7 @@ out8.textContent = Math.max.apply(null, ar8);
 // Task 9
 // По нажатию на кнопку b-9 запускается анонимная функция, которая через apply передает функции t9 контекст out-9 и массив ar9 элементов. Функция t9 должна вывести максимальный элемент массива.
 
-let ar9 = [66,55,33,77,22,81,15];
+let ar9 = [66,55,33,77,22,81,15,true];
 
 function t9(...arr) {
     this.textContent = Math.max.apply(null, arr);
@@ -85,7 +85,7 @@ document.querySelector('.b-9').addEventListener('click',() => {
 // Допишите анонимную стрелочную функцию внутри some такую, что принимает элементы массива ar9 из some и возвращет true если тип данных элемента boolean.
 
 let res10;
-// res10 = ar9.some();// сюда в скобки дописываете стрелочную функцию
+res10 = ar9.some(item => typeof item === 'boolean');// сюда в скобки дописываете стрелочную функцию
 
 console.log(res10);
 
