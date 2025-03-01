@@ -20,8 +20,9 @@ document.querySelector('.b-2').addEventListener('click', () => {
 
 function max(a, b) {
     this.textContent = (a > b) ? a : b;
-}
+ }
 
+ max.call(document.querySelector('.out-3'),33,66666)
 // тут прописываете запуск
 
 // Task 4
