@@ -98,8 +98,9 @@ t1.bind(document.querySelector('.out-11'))()
 max.bind(document.querySelector('.out-12'),11,8888)()
 // Task 13
 // C помощью bind создайте частичную функцию t13, которая основана на функции max но контекст - out-13. Первый агрумент функции max должен быть заменен на 50.  Запустите эту функцию c числом 48.
-
+max.bind(document.querySelector('.out-13'),50,48)()
 // Task 14
 // С помощью bind создайте функцию t14, которая основана на t9, но в качестве контента задайте out-14. Запустите t14 передав ей как аргумент массив ar9.
 
 
+t9.bind(document.querySelector('.out-14'),...ar9)()
