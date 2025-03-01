@@ -48,7 +48,7 @@ console.log(t5.call(document.querySelector('.i-5')));
 //Запустите функцию t1, с контекстом out-6 с помощью apply. Функция должна запускаться при загрузке страницы.
 
 // тут прописываете запуск
-
+t1.apply(document.querySelector('.out-6'))
 
 
 // Task 7
