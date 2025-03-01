@@ -36,8 +36,8 @@ document.querySelector('.b-4').addEventListener('click', () =>  {
 // Task 5
 // Напишите функцию t5, проверяет что у элемента на котором она была вызвана свойство textContent не равно undefined. Возвращает true или false
 
-function t5() {
-    // тут ваш код
+function t5() { 
+  return  this.textContent === undefined ;
 }
 
 console.log(t5.call(document.querySelector('.out-5')));
